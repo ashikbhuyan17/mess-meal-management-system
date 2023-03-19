@@ -1,32 +1,52 @@
 // assets
-import { IconBrandChrome, IconHelp } from '@tabler/icons';
-
+import { IconBrandChrome, IconHelp, IconUserX, IconReplace, IconUsers, IconCalendarStats, } from '@tabler/icons';
+import AccessAlarmsIcon from '@mui/icons-material/AccessAlarms';
+import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 // constant
-const icons = { IconBrandChrome, IconHelp };
-
-// ==============================|| SAMPLE PAGE & DOCUMENTATION MENU ITEMS ||============================== //
+const icons = { IconBrandChrome, IconHelp, IconUserX, IconReplace, IconUsers, IconCalendarStats, };
+// ==============================|| EXTRA PAGES MENU ITEMS ||============================== //
 
 const other = {
-    id: 'sample-docs-roadmap',
+    id: 'options',
+    title: 'Options',
     type: 'group',
     children: [
         {
-            id: 'sample-page',
-            title: 'Sample Page',
+            id: 'remove-member',
+            title: 'Remove Member',
             type: 'item',
-            url: '/sample-page',
-            icon: icons.IconBrandChrome,
+            url: 'pages/remove-member',
+            icon: icons.IconUserX,
             breadcrumbs: false
         },
         {
-            id: 'documentation',
-            title: 'Documentation',
+            id: 'change-member',
+            title: 'Change Members ',
             type: 'item',
-            url: 'https://codedthemes.gitbook.io/berry/',
-            icon: icons.IconHelp,
-            external: true,
-            target: true
+            url: 'pages/change-member',
+            icon: icons.IconReplace,
+            breadcrumbs: false
+
+        },
+        {
+            id: 'start-new-month',
+            title: 'Start New Month',
+            type: 'item',
+            url: 'pages/start-new-month',
+            icon: icons.IconCalendarStats,
+            breadcrumbs: false
+
+        },
+        {
+            id: 'active-month-details',
+            title: 'Active Month Details',
+            type: 'item',
+            url: 'pages/active-month-details',
+            icon: AccessAlarmsIcon,
+            breadcrumbs: false
+
         }
+
     ]
 };
 

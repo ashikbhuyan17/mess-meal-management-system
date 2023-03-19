@@ -1,41 +1,68 @@
 // assets
-import { IconKey } from '@tabler/icons';
-
+import { IconBrandChrome, IconHelp, IconUserPlus, IconCurrencyDollar, IconUsers } from '@tabler/icons';
+import PersonAddIcon from '@mui/icons-material/PersonAdd';
+import SetMealIcon from '@mui/icons-material/SetMeal';
+import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 // constant
-const icons = {
-    IconKey
-};
-
+const icons = { IconBrandChrome, IconHelp, IconUserPlus, IconCurrencyDollar, IconUsers };
 // ==============================|| EXTRA PAGES MENU ITEMS ||============================== //
 
 const pages = {
     id: 'pages',
-    title: 'Pages',
-    caption: 'Pages Caption',
     type: 'group',
     children: [
         {
-            id: 'authentication',
-            title: 'Authentication',
-            type: 'collapse',
-            icon: icons.IconKey,
+            id: 'add-new-member',
+            title: 'Add New Member',
+            type: 'item',
+            url: 'pages/add-new-member',
+            icon: icons.IconUserPlus,
+            breadcrumbs: false
+        },
+        {
+            id: 'add-member-money',
+            title: 'Add Members Money',
+            type: 'item',
+            url: 'pages/add-member-money',
+            icon: icons.IconCurrencyDollar,
+            breadcrumbs: false
 
-            children: [
-                {
-                    id: 'login3',
-                    title: 'Login',
-                    type: 'item',
-                    url: '/pages/login/login3',
-                    target: true
-                },
-                {
-                    id: 'register3',
-                    title: 'Register',
-                    type: 'item',
-                    url: '/pages/register/register3',
-                    target: true
-                }
-            ]
+        },
+        {
+            id: 'add-meal',
+            title: 'Add Meal',
+            type: 'item',
+            url: 'pages/add-meal',
+            icon: SetMealIcon,
+            breadcrumbs: false
+
+        },
+        {
+            id: 'add-meal-cost',
+            title: 'Add Meal Cost',
+            type: 'item',
+            url: 'pages/add-meal-cost',
+            icon: MonetizationOnIcon,
+            breadcrumbs: false
+
+        },
+        {
+            id: 'add-other-meal-cost',
+            title: 'Add Other Cost',
+            type: 'item',
+            url: 'pages/add-other-meal-cost',
+            icon: MonetizationOnIcon,
+            breadcrumbs: false
+
+        },
+        {
+            id: 'all-members',
+            title: 'All Members',
+            type: 'item',
+            url: 'pages/all-members',
+            icon: icons.IconUsers,
+            breadcrumbs: false
+
         }
     ]
 };
