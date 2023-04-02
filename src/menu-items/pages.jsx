@@ -15,7 +15,7 @@ const pages = {
             id: 'add-new-member',
             title: 'Add New Member',
             type: 'item',
-            url: 'pages/add-new-member',
+            url: 'meal/add-new-member',
             icon: icons.IconUserPlus,
             breadcrumbs: false
         },

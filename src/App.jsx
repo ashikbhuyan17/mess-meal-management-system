@@ -6,6 +6,9 @@ import { CssBaseline, StyledEngineProvider } from '@mui/material';
 // defaultTheme
 import themes from './themes';
 
+// routing
+import Routes from './routes';
+
 // project imports
 import NavigationScroll from './layout/NavigationScroll';
 
@@ -18,8 +21,8 @@ function App() {
       <ThemeProvider theme={themes(customization)}>
         <CssBaseline />
         <NavigationScroll>
-          {/* <Routes /> */}
-          <MainLayout />
+          <Routes />
+          {/* <MainLayout /> */}
         </NavigationScroll>
       </ThemeProvider>
     </StyledEngineProvider>
